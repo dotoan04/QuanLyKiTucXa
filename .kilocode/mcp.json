@@ -1,0 +1,1 @@
+{"mcpServers":{"context7":{"command":"npx","args":["-y","@upstash/context7-mcp"],"env":{"DEFAULT_MINIMUM_TOKENS":"","CONTEXT7_API_KEY":"ctx7sk-873bc001-060f-498e-be77-67226912fe3b"},"disabled":true,"alwaysAllow":[]}}}

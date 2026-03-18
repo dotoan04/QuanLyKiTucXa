@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const auth_middleware_1 = require("../../common/middlewares/auth.middleware");
+const student_controller_1 = require("./student.controller");
+const router = (0, express_1.Router)();
+router.use(auth_middleware_1.authenticate);
+router.get('/stats/summary', student_controller_1.studentController.getStudentStats);
+router.get('/stats', student_controller_1.studentController.getStudentStats);
+router.get('/me', student_controller_1.studentController.getMyProfile);
+router.put('/me', student_controller_1.studentController.updateMyProfile);
+router.get('/my-contracts', student_controller_1.studentController.getMyContracts);
+router.get('/by-code/:code', (0, auth_middleware_1.requireRole)('admin', 'staff', 'accountant'), student_controller_1.studentController.getStudentByCode);
+router.get('/:id/contracts', (0, auth_middleware_1.requireRole)('admin', 'staff', 'accountant'), student_controller_1.studentController.getStudentContracts);
+router.get('/:id/invoices', (0, auth_middleware_1.requireRole)('admin', 'staff', 'accountant'), student_controller_1.studentController.getStudentInvoices);
+router.get('/:id/incidents', (0, auth_middleware_1.requireRole)('admin', 'staff'), student_controller_1.studentController.getStudentIncidents);
+router.get('/', (0, auth_middleware_1.requireRole)('admin', 'staff', 'accountant'), student_controller_1.studentController.getStudents);
+router.get('/:id', (0, auth_middleware_1.requireRole)('admin', 'staff', 'accountant'), student_controller_1.studentController.getStudentById);
+router.put('/:id', (0, auth_middleware_1.requireRole)('admin', 'staff'), student_controller_1.studentController.updateStudent);
+exports.default = router;
+//# sourceMappingURL=student.routes.js.map
