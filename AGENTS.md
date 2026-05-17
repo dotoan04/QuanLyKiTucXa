@@ -40,6 +40,7 @@ npm run prisma:seed      # Seed database
 # Quality
 npm run lint             # ESLint check
 npm run test             # Jest tests
+npm run test:api         # Smoke test API + báo cáo HTML/Markdown (reports/)
 ```
 
 ### Frontend (`frontend/`)
@@ -238,9 +239,49 @@ Base URL: `/api/v1`
 | PUT | `/:id/terminate` | Terminate contract | Admin/Staff |
 | GET | `/:id/handover` | Get asset handover | Auth |
 | POST | `/:id/handover` | Create asset handover | Admin/Staff |
-| GET | `/registrations` | List registration requests | Admin/Staff |
-| PUT | `/registrations/:id/approve` | Approve request | Admin/Staff |
-| PUT | `/registrations/:id/reject` | Reject request | Admin/Staff |
+
+> **Đăng ký phòng (UC01):** dùng module **`/registrations`** (bảng dưới đây). Trong `contract.routes.ts` vẫn có bản **legacy** `GET|POST|PUT /contracts/registrations` — frontend và luồng mới dùng **`/api/v1/registrations`**.
+
+### Registrations (`/registrations`)
+
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/room-types` | Loại phòng phù hợp **giới tính** trong hồ sơ SV (`male`→`male_only`, `female`→`female_only`, `other`→`mixed`) | Student |
+| GET | `/available` | Phòng còn chỗ theo `roomTypeId` (query), lọc theo giới tính SV + không ghép khác giới trong cùng phòng | Student |
+| POST | `/` | Tạo đơn đăng ký — JSON body, **`documents`: string[]** (link công khai, VD Google Drive) | Student |
+| GET | `/my` | Đơn đăng ký của sinh viên | Auth |
+| POST | `/:id/cancel` | SV hủy đơn **pending** của mình | Student |
+| POST | `/:id/upload-payment` | Upload biên lai/chứng từ cọc — `multipart/form-data`, field `paymentProof` | Student |
+| GET | `/stats` | Thống kê đơn | Admin/Staff |
+| GET | `/` | Danh sách đơn (filter phân trang) | Admin/Staff/Accountant |
+| GET | `/:id` | Chi tiết đơn | Admin/Staff/Accountant |
+| POST | `/:id/approve` | Duyệt + gán phòng → `deposit_pending` | Admin/Staff |
+| POST | `/:id/reject` | Từ chối (body: `reviewNote`) | Admin/Staff |
+| POST | `/:id/confirm-deposit` | Xác nhận cọc → `deposit_confirmed` | **Accountant** |
+| POST | `/:id/reject-deposit` | Từ chối biên lai (body: `{ reason }`) → `deposit_pending` | **Accountant** |
+| POST | `/:id/confirm-payment` | Tạo HĐ từ `deposit_confirmed` → `approved` | Admin/Staff |
+| POST | `/:id/cancel-by-staff` | Hủy đơn (`pending` / `deposit_pending` / `deposit_paid` / `deposit_confirmed`); body tùy chọn `note` | Admin/Staff |
+
+**`POST /registrations` — `documents` (minh chứng):**
+
+- Sinh viên **không** upload file minh chứng lên server; dán **URL chia sẻ công khai** (khuyến nghị Google Drive: “Anyone with the link”).
+- **Bắt buộc** ít nhất **1** link hợp lệ; tối đa **5** link; mỗi link ≤ **2048** ký tự; phải là `http(s)://` đầy đủ; **production** chỉ chấp nhận **https**.
+- Thứ tự gợi ý UI: `[0]` minh chứng bản thân (CCCD/thẻ SV), `[1]` minh chứng hoàn cảnh (tùy chọn).
+
+**Giới tính & loại phòng (`room_types.genderRestriction`):**
+
+- Tạo loại phòng (admin/staff) **bắt buộc** chọn `male_only` / `female_only` / `mixed`.
+- SV **nam** chỉ thấy và chỉ được chọn phòng loại **Nam**; **nữ** ↔ **Nữ**; giới tính **Khác** ↔ loại **mixed** (trường hợp đặc biệt).
+- Kiểm tra cả **hợp đồng**, **duyệt đăng ký**, **chuyển phòng** để không ghép khác giới trong cùng phòng.
+
+### Registration Status Flow
+
+```
+pending → [Staff duyệt] → deposit_pending → [SV upload biên lai] → deposit_paid
+                                                              ↓
+                                              [KT xác nhận] → deposit_confirmed → [Staff tạo HĐ] → approved
+                                              [KT từ chối + lý do] → deposit_pending (SV upload lại)
+```
 
 ### Invoices (`/invoices`)
 | Method | Endpoint | Description | Auth |
@@ -251,7 +292,23 @@ Base URL: `/api/v1`
 | POST | `/generate` | Generate single invoice | Admin/Staff |
 | POST | `/generate-batch` | Generate monthly batch | Admin/Staff |
 | PUT | `/:id/pay` | Process payment | Admin/Staff |
+| PUT | `/:id` | Update invoice | Admin/Staff |
 | GET | `/stats/summary` | Invoice statistics | Admin/Staff |
+
+### Handover (`/contracts`)
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/handover/pending` | Pending handovers list | Admin/Staff |
+| POST | `/:id/handover` | Create handover record | Admin/Staff |
+| GET | `/:id/handover` | Get handover details | Auth |
+| PUT | `/:id/handover` | Update handover (meter readings, items) | Admin/Staff |
+| POST | `/:id/handover/complete` | Complete handover | Admin/Staff |
+
+### PDF Generation (`/pdf`)
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/deposit-receipt/:registrationId` | Generate deposit receipt PDF | Admin/Staff |
+| GET | `/contract/:contractId` | Generate contract PDF | Admin/Staff/Student |
 
 ### Incidents (`/incidents`)
 | Method | Endpoint | Description | Auth |
@@ -555,11 +612,18 @@ NEXT_PUBLIC_API_URL=http://localhost:3001/api/v1
 
 ### Registration Approval Flow
 
-1. Student creates: `POST /contracts/registrations`
-2. Admin views: `GET /contracts/registrations`
-3. Approve: `PUT /contracts/registrations/:id/approve` with `roomId`
-   - Auto-creates contract
-4. Reject: `PUT /contracts/registrations/:id/reject` with `reviewNote`
+1. Student creates: `POST /registrations` (JSON, gồm `documents: string[]` — link Google Drive công khai).
+   - Nếu đã có đơn **pending**, hệ thống có thể **tự hủy** đơn cũ và thông báo staff (thay thế đơn mới).
+2. Staff/Admin xem: `GET /registrations`
+3. Approve: `POST /registrations/:id/approve` với body `roomId` (bắt buộc), `reviewNote` (tùy chọn) → **Chờ nộp cọc**
+4. Student upload biên lai cọc: `POST /registrations/:id/upload-payment` (multipart `paymentProof`) → **Chờ kế toán xác nhận**
+5. **Accountant** xác nhận cọc: `POST /registrations/:id/confirm-deposit` → **Cọc đã xác nhận**
+6. **Accountant** từ chối biên lai: `POST /registrations/:id/reject-deposit` body `{ reason }` → quay về `deposit_pending` (SV upload lại)
+7. Staff/Admin tạo hợp đồng: `POST /registrations/:id/confirm-payment` → tạo hợp đồng → `approved`
+8. Reject: `POST /registrations/:id/reject` với `reviewNote`
+9. Hủy đơn:
+   - SV (chỉ **pending**): `POST /registrations/:id/cancel`
+   - Staff/Admin (`pending` | `deposit_pending` | `deposit_paid` | `deposit_confirmed`): `POST /registrations/:id/cancel-by-staff` (optional `note`)
 
 ### Invoice Generation
 
@@ -586,7 +650,14 @@ Currently minimal test coverage. When adding tests:
    npm run test
    ```
 
-2. **Frontend**: No test framework configured yet
+2. **API smoke test + báo cáo HTML/Markdown** (`backend/`)
+   ```bash
+   cd backend && npm run test:api
+   ```
+   - Ghi file vào `backend/reports/` (`.html` mở bằng trình duyệt — in hoặc chụp màn hình đưa vào báo cáo; `.md` dán vào Word/Google Docs).
+   - Tuỳ chọn: `API_URL`, `REPORT_OUTPUT_DIR`.
+
+3. **Frontend**: No test framework configured yet
 
 ---
 
@@ -625,6 +696,11 @@ Currently minimal test coverage. When adding tests:
 - Code comments and variable names in English.
 - Use `vi-VN` locale for number/date formatting.
 
+### Registration documents (minh chứng đăng ký phòng)
+- Trường `documents` trong DB là **mảng URL** (string), không phải đường dẫn file trên server.
+- **Biên lai / chứng từ cọc** sau khi duyệt hồ sơ vẫn lưu qua **`POST /registrations/:id/upload-payment`** → `paymentProofUrl` trỏ tới `/uploads/registrations/...` (static serve từ backend).
+- UI admin/staff: mở link ngoài (Drive) trực tiếp; với bản ghi cũ có `/uploads/...`, frontend nối `NEXT_PUBLIC_API_URL` (bỏ `/api/v1`) làm host file.
+
 ### Chatbot Streaming
 - Use `POST /chatbot/stream` for SSE streaming.
 - Non-streaming: `POST /chatbot/send`.
@@ -638,38 +714,38 @@ Based on the use case specification, here's the current implementation status:
 ### Actor: Sinh Vien (Student)
 | Use Case | Status | Notes |
 |----------|--------|-------|
-| UC01 Đăng ký phòng | Partial | Registration request API exists, frontend flow needed |
-| UC02 Gia hạn hợp đồng | Not implemented | |
-| UC03 Trả phòng | Partial | Terminate contract exists, full workflow needed |
+| UC01 Đăng ký phòng | Done | `POST /registrations` + link minh chứng (Google Drive) + upload biên lai cọc + priority scoring |
+| UC02 Gia hạn hợp đồng | Done | `/renewals` module with eligibility check, reminders |
+| UC03 Trả phòng | Done | `/returns` module with full return workflow |
 | UC04 Thanh toán tiền phòng | Partial | Payment API exists, VNPay callback incomplete |
 | UC05 Xem hóa đơn | Done | `/invoices/my-invoices` |
 | UC06 Báo sự cố | Done | `/incidents` CRUD |
 | UC07 Chat với AI | Done | `/chatbot` with RAG |
-| UC08 Đăng ký tạm vắng | Not implemented | |
+| UC08 Đăng ký tạm vắng | Done | `/temporary-leave` module with overdue tracking |
 
 ### Actor: Quản Lý KTX (Staff)
 | Use Case | Status | Notes |
 |----------|--------|-------|
-| UC09 Duyệt hồ sơ đăng ký | Done | Registration approve/reject |
+| UC09 Duyệt hồ sơ đăng ký | Done | `/registrations` approve/reject/confirm-payment/cancel-by-staff |
 | UC10 Phân phòng | Done | Via registration approval |
-| UC11 Quản lý chuyển phòng | Not implemented | |
-| UC12 Lập biên bản vi phạm | Not implemented | |
+| UC11 Quản lý chuyển phòng | Done | `/transfers` module with fee calculation |
+| UC12 Lập biên bản vi phạm | Done | `/violations` module with penalty levels |
 | UC13 Quản lý hợp đồng | Done | Contract CRUD + handover |
 
 ### Actor: Kế Toán (Accountant)
 | Use Case | Status | Notes |
 |----------|--------|-------|
-| UC14 Tạo hóa đơn hàng tháng | Done | Batch generation |
-| UC15 Đối soát thanh toán | Not implemented | |
-| UC16 Quản lý tiền cọc | Partial | Deposit field exists |
-| UC17 Xuất báo cáo tài chính | Not implemented | |
+| UC14 Tạo hóa đơn hàng tháng | Done | Batch generation + meter reading review |
+| UC15 Đối soát thanh toán | Done | `/reconciliation` module with discrepancy detection |
+| UC16 Quản lý tiền cọc | Partial | Deposit field exists, tracked in contracts; no dedicated management UI |
+| UC17 Xuất báo cáo tài chính | Done | `/financial-reports` module |
 
 ### Actor: Kỹ Thuật (Technician)
 | Use Case | Status | Notes |
 |----------|--------|-------|
-| UC18 Tiếp nhận & xử lý ticket | Partial | Incident assign/resolve |
-| UC19 Lập lịch bảo trì | Not implemented | |
-| UC20 Nghiệm thu sửa chữa | Not implemented | |
+| UC18 Tiếp nhận & xử lý ticket | Done | Incident assign/resolve |
+| UC19 Lập lịch bảo trì | Done | `/maintenance` module with types/status |
+| UC20 Nghiệm thu sửa chữa | Done | `/contracts/:id/handover/complete` + meter readings |
 
 ### Actor: Ban Giám Đốc (Director)
 | Use Case | Status | Notes |
@@ -682,8 +758,20 @@ Based on the use case specification, here's the current implementation status:
 | Use Case | Status | Notes |
 |----------|--------|-------|
 | UC24 Quản lý tài khoản | Done | User CRUD |
-| UC25 Cấu hình hệ thống | Partial | `system_config` table exists |
-| UC26 Xem audit log | Not implemented | |
+| UC25 Cấu hình hệ thống | Done | `system_config` module with CRUD |
+| UC26 Xem audit log | Done | `/audit-logs` with filters + audit logging in controllers |
+
+### UC27 (New) - Ghi chỉ số điện nước
+| Use Case | Status | Notes |
+|----------|--------|-------|
+| UC27 Ghi chỉ số điện nước | Done | `/meter-readings` module with anomaly detection |
+
+### Supporting Features
+| Feature | Status | Notes |
+|---------|--------|-------|
+| PDF Phiếu Thu | Done | `/pdf/deposit-receipt/:registrationId` |
+| PDF Hợp đồng | Done | `/pdf/contract/:contractId` (draft + complete) |
+| Bàn giao phòng & ký hợp đồng (UC20) | Done | Handover + meter readings + PDF contract |
 
 ---
 
@@ -726,6 +814,45 @@ Based on the use case specification, here's the current implementation status:
   - Registration 409 flow now shows clear UI message and checks active contract/pending request.
   - Invoice batch generation validates `invoiceMonth` to avoid `Invalid Date` Prisma errors.
   - Director revenue report handles missing dates safely (defaults to current month).
+- Completed all remaining use cases:
+  - UC02 Contract renewal: `backend/src/modules/renewals/*` + `frontend/src/app/student/renewals/`
+  - UC03 Room return: `backend/src/modules/returns/*` with inspection and refund workflow
+  - UC08 Temporary leave: `backend/src/modules/temporary-leave/*` + `frontend/src/app/student/temporary-leave/`
+  - UC11 Room transfer: `backend/src/modules/transfers/*` + `frontend/src/app/student/transfer/` + staff management
+  - UC12 Violations: `backend/src/modules/violations/*` + `frontend/src/app/staff/violations/`
+  - UC15 Reconciliation: `backend/src/modules/reconciliation/*` + `frontend/src/app/staff/reconciliation/`
+  - UC17 Financial reports: `backend/src/modules/financial-report/*`
+  - UC19 Maintenance: `backend/src/modules/maintenance/*` + `frontend/src/app/staff/maintenance/`
+  - UC25 System config: `backend/src/modules/system-config/*` with full CRUD
+  - UC26 Audit log: `backend/src/modules/audit-log/*` + `frontend/src/app/admin/audit-logs/`
+  - UC27 Meter readings: `backend/src/modules/meter-readings/*` + `frontend/src/app/staff/meter-readings/`
+- UC20 Handover & contract PDF:
+  - Added meter reading fields to AssetHandover schema (electricity/water initial, photos)
+  - `PUT /contracts/:id/handover` - update with meter readings and CSVC checklist
+  - `POST /contracts/:id/handover/complete` - finalize handover
+  - `GET /contracts/handover/pending` - list pending handovers
+  - `frontend/src/app/staff/handover/` - handover management and detail pages
+- PDF Generation:
+  - `backend/src/modules/pdf-generator/pdf-generator.service.ts` - PDFKit-based generation
+  - `GET /api/v1/pdf/deposit-receipt/:registrationId` - Phieu Thu PDF
+  - `GET /api/v1/pdf/contract/:contractId` - Hop Dong PDF (draft + complete)
+- Audit logging integration in controllers (contracts, invoices, auth)
+- **Đăng ký phòng (`/registrations`):** tạo đơn bằng JSON + `documents[]` (URL công khai, không lưu file minh chứng trên host); biên lai cọc vẫn multipart. SV hủy `POST /registrations/:id/cancel` (pending); staff `POST /registrations/:id/cancel-by-staff`. Frontend: `student/register`, `student/registrations`, `admin/registrations` (staff dùng chung).
+
+### Bổ sung 2026-03-22 (Chatbot, Chroma, audit deps, Kế toán UI)
+
+- **Chatbot streaming UI (`frontend/src/components/chat/ChatPanel.tsx`):**
+  - `streamAccRef` đồng bộ nội dung SSE với ref để tránh race khi event `done` chạy trước khi state nhận hết chunk → không còn flash fallback sai.
+  - Trạng thái chờ token đầu: copy “Đang xử lý câu hỏi” + gợi ý tra cứu tài liệu; `aria-live` cho accessibility.
+  - Fallback khi thật sự không có nội dung: thông điệp trung tính (thử lại), không dùng giọng “ngoài phạm vi KTX”.
+- **Prompt RAG / general chat (`backend/src/modules/chatbot/ai-config.ts`):** câu hỏi meta (“tôi có thể tra cứu / hỏi gì”) được coi là trong phạm vi; trả lời gọn theo vai trò, không từ chối như off-topic.
+- **ChromaDB client:** dependency `@chroma-core/default-embed` trong `backend/package.json` — client `chromadb@3` có thể resolve embedding “default” từ server; RAG vẫn dùng OpenRouter qua `createEmbedding` + vector truyền sẵn. Ghi chú trong `backend/.env.example` và comment `ai-config.ts`.
+- **`npm audit` / Prisma:** `backend/package.json` có `overrides.effect: ^3.20.0` (transitive từ `@prisma/config`) để vá GHSA-38f7-945m-qr2g khi Prisma chưa nâng `effect`.
+- **Đối soát (`/reconciliation`):**
+  - API stats trả `totalTransactions`, `totalMatched`, `totalDiscrepancies`; list báo cáo trong `reports` (Prisma: `paymentGateway`, chi tiết số liệu trong JSON `data`). Frontend `staff/reconciliation/page.tsx` chuẩn hóa response + chi tiết sai lệch (`gatewayAmount` / `systemAmount`).
+  - `POST /reconciliation`: controller map `gateway` (body từ UI) → `paymentGateway` cho service.
+- **Tiền cọc kế toán (`frontend/src/app/staff/deposits/page.tsx`):** tab “Chờ xác nhận” (`deposit_paid`) và “Lịch sử” (`deposit_confirmed`, `approved`); ghi chú phân biệt cọc đăng ký vs hóa đơn tháng / đối soát.
+- **`GET /registrations`:** query `status` hỗ trợ **nhiều trạng thái** cách nhau dấu phẩy (vd. `deposit_confirmed,approved`); `findAll` include **`assignedRoom`** để UI hiển thị phòng đã gán.
 
 ---
 
@@ -739,5 +866,6 @@ Based on the use case specification, here's the current implementation status:
 | Open database GUI | `cd backend && npm run prisma:studio` |
 | Reset database | `npx prisma migrate reset` |
 | Check API health | `GET http://localhost:3001/health` |
+| API smoke + báo cáo HTML/MD | `cd backend && npm run test:api` → `backend/reports/` |
 | API base URL | `http://localhost:3001/api/v1` |
 | Frontend URL | `http://localhost:3000` |

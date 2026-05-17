@@ -1,0 +1,1257 @@
+# Bảng giá các loại phòng
+
+# Giá thuê theo tháng (VND)
+
+## Phòng đơn
+- **Giá:** 2.500.000đ/tháng
+- **Diện tích:** 25m²
+- **Tiện ích:** Giường, tủ, bàn, ghế, điều hòa, tủ lạnh mini, Wifi
+- **Số người:** 1 người
+- **Nhà vệ sinh:** Trong phòng
+
+- **Deposit:** 2.000.000đ
+
+- **Phù hợp:** Sinh viên muốn có sự riêng tư
+
+- **Yêu cầu:** Yêu cầu sự yên tĩnh, ít đi lại, nghiêng cứu việc
+
+- **Phù hợp với:** Sinh viên thích sự độc lập, tập trung học, hoặc đi làm việc nhóm
+
+- **Phù hợp với:** Sinh viên nữ, sinh viên ưu tiên (con herman)
+
+- **Giới hạn:** 22:00
+
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Có thể cho nam hoặc nữ)
+- **Phù hợp với:** Sinh viên ưu tiên học tập
+- **Phù hợp với:** Sinh viên muốn có không gian riêng tư
+- **Giới hạn:** 22:00
+- **Giờ giấc:** Mở cửa tự do, sinh viên ưu tiên
+- **Ưu đãi:** Không có giới tính ( Cô thể cho nam hoặc nữ)
+
+- **Phù hợp với:** Sinh viên ưu tiên học tập, nghiên cứu khoa học
+
+- **Phù hợp với:** Sinh viên ưu tiên học tập nhóm, có kỹ năng làm việc nhóm tốt
+- **Phù hợp với:** Sinh viên ưu tiên xa nhà, độc lập trong sinh hoạt
