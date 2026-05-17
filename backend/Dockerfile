@@ -3,10 +3,14 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+ENV npm_config_audit=false \
+    npm_config_fund=false \
+    npm_config_loglevel=warn
+
 RUN apk add --no-cache openssl
 
 COPY package*.json ./
-RUN npm ci
+RUN --mount=type=cache,target=/root/.npm npm ci
 
 COPY prisma ./prisma/
 RUN npx prisma generate
@@ -22,11 +26,15 @@ FROM node:20-alpine AS runner
 
 WORKDIR /app
 
+ENV npm_config_audit=false \
+    npm_config_fund=false \
+    npm_config_loglevel=warn
+
 RUN apk add --no-cache curl openssl
 
 COPY package*.json ./
 COPY --from=builder /app/node_modules ./node_modules
-RUN npm prune --omit=dev && npm cache clean --force
+RUN --mount=type=cache,target=/root/.npm npm prune --omit=dev && npm cache clean --force
 
 COPY --from=builder /app/prisma ./prisma/
 COPY --from=builder /app/dist ./dist/
