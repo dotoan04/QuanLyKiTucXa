@@ -50,3 +50,4 @@ Thumbs.db
 
 # Generated local documents
 *.docx
+backend/.env
