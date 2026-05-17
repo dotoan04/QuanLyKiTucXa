@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
-import { Home, FileText, DollarSign, Wrench, MessageCircle, Menu, LogOut, X, RefreshCw, ArrowRightLeft, Clock, CornerDownLeft, ClipboardCheck, Bell, CalendarDays } from 'lucide-react'
+import { Home, FileText, DollarSign, Wrench, MessageCircle, Menu, LogOut, X, RefreshCw, ArrowRightLeft, Clock, CornerDownLeft, ClipboardCheck, Bell, CalendarDays, AlertTriangle } from 'lucide-react'
 import { useAuthStore } from '@/stores/auth.store'
 import { NotificationDropdown } from '@/components/layout/NotificationDropdown'
 import api from '@/lib/api'
@@ -69,6 +69,7 @@ export default function StudentLayout({ children }: { children: ReactNode }) {
     { name: 'Gia hạn', href: '/student/renewals', icon: RefreshCw },
     { name: 'Chuyển phòng', href: '/student/transfer', icon: ArrowRightLeft },
     { name: 'Trả phòng', href: '/student/returns', icon: CornerDownLeft },
+    { name: 'Vi phạm', href: '/student/violations', icon: AlertTriangle },
     { name: 'Tạm vắng', href: '/student/temporary-leave', icon: Clock },
     { name: 'Chat AI', href: '/student/chatbot', icon: MessageCircle },
     { name: 'Thông báo', href: '/student/notifications', icon: Bell },

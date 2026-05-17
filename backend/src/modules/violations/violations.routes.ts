@@ -7,6 +7,7 @@ const router = Router()
 
 router.post('/', authenticate, requireRole('admin', 'staff'), asyncHandler(violationController.create))
 router.get('/', authenticate, requireRole('admin', 'staff'), asyncHandler(violationController.getAll))
+router.get('/my', authenticate, requireRole('student'), asyncHandler(violationController.getMyViolations))
 router.get('/student/:studentId', authenticate, requireRole('admin', 'staff'), asyncHandler(violationController.getStudentHistory))
 router.get('/:id', authenticate, asyncHandler(violationController.getById))
 router.put('/:id/process', authenticate, requireRole('admin', 'staff'), asyncHandler(violationController.process))

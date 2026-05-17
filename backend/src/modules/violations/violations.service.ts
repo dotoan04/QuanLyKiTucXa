@@ -164,7 +164,7 @@ class ViolationService {
     return { violations, page, limit, total }
   }
 
-  async getById(id: string) {
+  async getById(id: string, user?: { userId: string; role: string }) {
     const violation = await prisma.violation.findUnique({
       where: { id },
       include: {
@@ -191,7 +191,41 @@ class ViolationService {
       throw AppError.notFound('Violation')
     }
 
+    if (user?.role === 'student' && violation.student.user.id !== user.userId) {
+      throw AppError.forbidden('You can only view your own violations')
+    }
+
     return violation
+  }
+
+  async getMyViolations(userId: string) {
+    const student = await prisma.student.findFirst({
+      where: { userId },
+      select: { id: true }
+    })
+
+    if (!student) {
+      throw AppError.notFound('Student')
+    }
+
+    const violations = await prisma.violation.findMany({
+      where: { studentId: student.id },
+      include: {
+        incident: { select: { id: true, title: true, category: true } },
+        reporter: { select: { id: true, fullName: true } }
+      },
+      orderBy: { createdAt: 'desc' }
+    })
+
+    const stats = {
+      total: violations.length,
+      pending: violations.filter(v => v.status === 'pending').length,
+      processed: violations.filter(v => v.status === 'processed').length,
+      appealed: violations.filter(v => v.status === 'appealed').length,
+      totalPenalty: violations.reduce((sum, v) => sum + (v.penaltyAmount?.toNumber() || 0), 0)
+    }
+
+    return { violations, stats }
   }
 
   async process(data: ProcessViolationInput) {

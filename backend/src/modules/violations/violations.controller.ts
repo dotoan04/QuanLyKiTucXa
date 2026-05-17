@@ -23,7 +23,13 @@ class ViolationController {
 
   getById = async (req: Request, res: Response, _next: NextFunction) => {
     const { id } = req.params
-    const result = await violationService.getById(id)
+    const result = await violationService.getById(id, (req as any).user)
+    return sendSuccess(res, result)
+  }
+
+  getMyViolations = async (req: Request, res: Response, _next: NextFunction) => {
+    const userId = (req as any).user.userId
+    const result = await violationService.getMyViolations(userId)
     return sendSuccess(res, result)
   }
 
