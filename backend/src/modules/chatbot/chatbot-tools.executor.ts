@@ -127,6 +127,42 @@ export async function executeChatTool(
         return clipJson({ source: 'postgresql', domain: 'organization_rooms', data: payload })
       }
 
+      case 'get_organization_contracts': {
+        const data = await chatbotDataService.loadContracts({
+          userRole: roleStr,
+          question: ctx.userQuestion,
+        })
+        return clipJson({ source: 'postgresql', domain: 'organization_contracts', data })
+      }
+
+      case 'get_organization_revenue_summary': {
+        const data = await chatbotDataService.loadRevenueSummary({
+          question: ctx.userQuestion,
+        })
+        return clipJson({ source: 'postgresql', domain: 'organization_revenue_summary', data })
+      }
+
+      case 'get_organization_renewals_expiring': {
+        const data = await chatbotDataService.loadRenewalsExpiring({
+          question: ctx.userQuestion,
+        })
+        return clipJson({ source: 'postgresql', domain: 'organization_renewals_expiring', data })
+      }
+
+      case 'get_organization_incidents': {
+        const data = await chatbotDataService.loadIncidents({
+          question: ctx.userQuestion,
+        })
+        return clipJson({ source: 'postgresql', domain: 'organization_incidents', data })
+      }
+
+      case 'get_organization_violations': {
+        const data = await chatbotDataService.loadViolations({
+          question: ctx.userQuestion,
+        })
+        return clipJson({ source: 'postgresql', domain: 'organization_violations', data })
+      }
+
       default:
         return clipJson({ error: 'unknown_tool', name })
     }

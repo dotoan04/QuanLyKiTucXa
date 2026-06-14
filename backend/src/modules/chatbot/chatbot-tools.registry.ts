@@ -9,6 +9,11 @@ export const CHAT_TOOL_NAMES = [
   'get_appointment_schedule',
   'get_organization_unpaid_invoices',
   'get_organization_active_rooms',
+  'get_organization_contracts',
+  'get_organization_revenue_summary',
+  'get_organization_renewals_expiring',
+  'get_organization_incidents',
+  'get_organization_violations',
 ] as const
 
 export type ChatToolName = (typeof CHAT_TOOL_NAMES)[number]
@@ -30,18 +35,30 @@ export const CHAT_TOOLS_BY_ROLE: Record<UserRole, readonly ChatToolName[]> = {
     'get_appointment_schedule',
     'get_organization_unpaid_invoices',
     'get_organization_active_rooms',
+    'get_organization_contracts',
+    'get_organization_renewals_expiring',
+    'get_organization_incidents',
+    'get_organization_violations',
   ],
   accountant: [
     'search_knowledge',
     'get_appointment_schedule',
     'get_organization_unpaid_invoices',
+    'get_organization_contracts',
+    'get_organization_revenue_summary',
+    'get_organization_renewals_expiring',
   ],
-  technician: ['search_knowledge', 'get_appointment_schedule'],
+  technician: ['search_knowledge', 'get_appointment_schedule', 'get_organization_incidents'],
   director: [
     'search_knowledge',
     'get_appointment_schedule',
     'get_organization_unpaid_invoices',
     'get_organization_active_rooms',
+    'get_organization_contracts',
+    'get_organization_revenue_summary',
+    'get_organization_renewals_expiring',
+    'get_organization_incidents',
+    'get_organization_violations',
   ],
   admin: [...CHAT_TOOL_NAMES],
 }
@@ -129,6 +146,31 @@ export function getOpenRouterToolDefinitions(
     get_organization_active_rooms: {
       description:
         'Lưu trú theo hợp đồng active (danh sách phòng–sinh viên) hoặc snapshot chỗ trống nếu câu hỏi về phòng trống. Role quản lý/giám đốc/admin.',
+      parameters: { type: 'object', properties: {}, required: [] },
+    },
+    get_organization_contracts: {
+      description:
+        'Danh sách hợp đồng (trạng thái, sinh viên, phòng, ngày bắt đầu/kết thúc, tiền thuê, cọc, còn bao nhiêu ngày hết hạn). Lọc theo trạng thái (đang hiệu lực/hết hạn/chấm dứt/chờ), tòa nhà, mã sinh viên theo câu hỏi. Dùng khi hỏi "các hợp đồng", "hợp đồng đang hiệu lực", "hợp đồng của SV...". Role nhân viên/kế toán/giám đốc/admin.',
+      parameters: { type: 'object', properties: {}, required: [] },
+    },
+    get_organization_revenue_summary: {
+      description:
+        'Tổng hợp công nợ chưa thu toàn hệ thống (tổng tiền chưa thu, số lượng hóa đơn unpaid/overdue/partial), có thể lọc theo tháng. Dùng khi hỏi "tổng công nợ", "còn bao nhiêu tiền chưa thu", "tháng X bao nhiêu chưa đóng". Role kế toán/giám đốc/admin.',
+      parameters: { type: 'object', properties: {}, required: [] },
+    },
+    get_organization_renewals_expiring: {
+      description:
+        'Hợp đồng đang hiệu lực sắp hết hạn trong cửa sổ N ngày (mặc định 30). Ứng viên cần gia hạn. Dùng khi hỏi "hợp đồng sắp hết hạn", "trong 60 ngày tới". Role nhân viên/kế toán/giám đốc/admin.',
+      parameters: { type: 'object', properties: {}, required: [] },
+    },
+    get_organization_incidents: {
+      description:
+        'Danh sách sự cố (cơ sở vật chất, điện, nước, mạng, an ninh...) với trạng thái/ưu tiên/loại/phòng. Dùng khi hỏi "sự cố đang xử lý", "sự cố điện", "sự cố khẩn cấp". Role nhân viên/kỹ thuật/giám đốc/admin.',
+      parameters: { type: 'object', properties: {}, required: [] },
+    },
+    get_organization_violations: {
+      description:
+        'Danh sách vi phạm nội quy (sinh viên, loại, mức phạt, tiền phạt, trạng thái). Dùng khi hỏi "vi phạm mới", "vi phạm chưa xử lý", "vi phạm của SV...". Role nhân viên/giám đốc/admin.',
       parameters: { type: 'object', properties: {}, required: [] },
     },
   }

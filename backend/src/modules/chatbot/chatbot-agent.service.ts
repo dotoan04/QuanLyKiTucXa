@@ -32,6 +32,11 @@ const POSTGRES_TOOLS = new Set<ChatToolName>([
   'get_appointment_schedule',
   'get_organization_unpaid_invoices',
   'get_organization_active_rooms',
+  'get_organization_contracts',
+  'get_organization_revenue_summary',
+  'get_organization_renewals_expiring',
+  'get_organization_incidents',
+  'get_organization_violations',
 ])
 
 export interface ChatAgentResult {

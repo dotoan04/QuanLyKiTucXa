@@ -15,7 +15,8 @@
     "setup-bank-config": "ts-node scripts/setup-bank-config.ts",
     "lint": "eslint src --ext .ts",
     "test": "jest",
-    "test:api": "ts-node scripts/test-api.ts"
+    "test:api": "ts-node scripts/test-api.ts",
+    "test:deepseek": "ts-node scripts/test-deepseek.ts"
   },
   "dependencies": {
     "@chroma-core/default-embed": "^0.1.9",

@@ -1,4 +1,12 @@
-import { PrismaClient, InvoiceStatus, RegistrationStatus } from '@prisma/client'
+import {
+  PrismaClient,
+  InvoiceStatus,
+  RegistrationStatus,
+  ContractStatus,
+  IncidentStatus,
+  IncidentPriority,
+  IncidentCategory,
+} from '@prisma/client'
 import type { ChatIntent } from './chatbot-intents'
 import { logger } from './ai-config'
 import { renewalService } from '../renewals/renewals.service'
@@ -96,6 +104,89 @@ export function parseRoomNumberHint(question: string): string | undefined {
   if (ROOM_NUMBER_STOPWORDS.has(key)) return undefined
   if (raw.length < 2 && !/\d/.test(raw)) return undefined
   return raw
+}
+
+function clampDays(n: number): number {
+  return Math.min(365, Math.max(1, Number.isFinite(n) ? n : 30))
+}
+
+/** Cửa sổ ngày từ câu hỏi, vd. "trong 30 ngày", "60 ngày tới", "2 tuần". */
+export function parseDaysWindowHint(question: string, defaultDays: number): number {
+  const q = question
+  const trongNgay = q.match(/trong\s+(\d{1,3})\s*ngày/i)
+  if (trongNgay) return clampDays(parseInt(trongNgay[1], 10))
+  const ngayToi = q.match(/(\d{1,3})\s*ngày\s*(?:tới|tiếp|nữa|nửa)/i)
+  if (ngayToi) return clampDays(parseInt(ngayToi[1], 10))
+  const tuan = q.match(/(\d{1,2})\s*tuần/i)
+  if (tuan) return clampDays(parseInt(tuan[1], 10) * 7)
+  return defaultDays
+}
+
+/** Trạng thái hợp đồng theo từ khóa tiếng Việt (mặc định active khi không rõ). */
+export function parseContractStatusHint(question: string): ContractStatus | undefined {
+  const q = question.toLowerCase()
+  if (/đã\s*hết\s*hạn|hết\s*hạn\b|expired|hợp\s*đồng\s*cũ/.test(q)) return ContractStatus.expired
+  if (/chấm\s*dứt|terminated|hủy\s*hợp\s*đồng|đã\s*hủy/.test(q)) return ContractStatus.terminated
+  if (/chờ|pending|chưa\s*duyệt|đang\s*soạn/.test(q)) return ContractStatus.pending
+  if (/đang\s*hiệu\s*lực|active|còn\s*hiệu\s*lực|đang\s*thuê/.test(q)) return ContractStatus.active
+  return undefined
+}
+
+export function parseIncidentStatusHint(question: string): IncidentStatus | undefined {
+  const q = question.toLowerCase()
+  if (/đang\s*xử\s*lý|in[\s-]*progress|đang\s*làm/.test(q)) return IncidentStatus.in_progress
+  if (/đã\s*(giải\s*quyết|xử|xong)|resolved|hoàn\s*thành/.test(q)) return IncidentStatus.resolved
+  if (/đã\s*đóng|closed/.test(q)) return IncidentStatus.closed
+  if (/chờ|pending|mới\s+tạo|chưa\s*xử/.test(q)) return IncidentStatus.pending
+  return undefined
+}
+
+export function parseIncidentPriorityHint(question: string): IncidentPriority | undefined {
+  const q = question.toLowerCase()
+  if (/khẩn\s*cấp|urgent|ưu\s*tiên\s*(cao|nhất)/.test(q)) return IncidentPriority.urgent
+  if (/cao|high/.test(q)) return IncidentPriority.high
+  if (/thấp|low/.test(q)) return IncidentPriority.low
+  if (/trung\s*bình|medium/.test(q)) return IncidentPriority.medium
+  return undefined
+}
+
+export function parseIncidentCategoryHint(question: string): IncidentCategory | undefined {
+  const q = question.toLowerCase()
+  if (/điện|electrical|chập|hỏng\s*(đèn|ổ\s*điện)/.test(q)) return IncidentCategory.electrical
+  if (/nước|plumbing|vòi|bồn\s*cầu|rò\s*rỉ|thoát\s*nước/.test(q)) return IncidentCategory.plumbing
+  if (/nội\s*thất|giường|tủ|bàn|ghế|furniture/.test(q)) return IncidentCategory.furniture
+  if (/mạng|wifi|internet|network/.test(q)) return IncidentCategory.network
+  if (/an\s*ninh|bảo\s*vệ|security|trộm/.test(q)) return IncidentCategory.security
+  return undefined
+}
+
+/** Trạng thái vi phạm (string, không phải enum). */
+export function parseViolationStatusHint(question: string): string | undefined {
+  const q = question.toLowerCase()
+  if (/chưa\s*xử|chờ\s*xử|pending|mới\s+(tạo|báo)/.test(q)) return 'pending'
+  if (/đã\s*xử|processed|đã\s*phạt/.test(q)) return 'processed'
+  if (/đã\s*đóng|closed|đã\s*giải\s*quyết/.test(q)) return 'closed'
+  if (/kháng|appealed|khiếu\s*nại/.test(q)) return 'appealed'
+  return undefined
+}
+
+export function parsePenaltyLevelHint(question: string): string | undefined {
+  const q = question.toLowerCase()
+  if (/nghiêm\s*trọng|severe|cao\s*nhất/.test(q)) return 'severe'
+  if (/cao|high/.test(q)) return 'high'
+  if (/thấp|low/.test(q)) return 'low'
+  if (/trung\s*bình|medium/.test(q)) return 'medium'
+  return undefined
+}
+
+/** Mã sinh viên khi user nhắc rõ (vd. "mã sinh viên SV001", "mssv 20210001", "sinh viên SV001"). */
+export function parseStudentCodeHint(question: string): string | undefined {
+  const m =
+    question.match(/(?:mã\s*sinh\s*viên|mssv|sv)\s*[:\-]?\s*([A-Za-z0-9]{4,20})/i) ||
+    question.match(/sinh\s*viên\s+([A-Za-z]?\d{5,12})/i)
+  if (!m) return undefined
+  const raw = m[1].trim().slice(0, 20)
+  return raw.length >= 4 ? raw : undefined
 }
 
 function money(n: { toString(): string }) {
@@ -746,6 +837,241 @@ class ChatbotDataService {
         totalFreeBeds,
       },
       rooms: topRows,
+    }
+  }
+
+  // ────────── Agent tools: organization queries (agent-only, không qua intent) ──────────
+
+  /** Danh sách hợp đồng theo trạng thái / tòa / mã SV (organization scope). */
+  async loadContracts(input: { userRole: string; question: string }): Promise<Record<string, unknown>> {
+    const { question } = input
+    const status = parseContractStatusHint(question) ?? ContractStatus.active
+    const building = parseBuildingHint(question)
+    const studentCode = parseStudentCodeHint(question)
+
+    const contracts = await prisma.contract.findMany({
+      where: {
+        status,
+        ...(building
+          ? { room: { building: { contains: building, mode: 'insensitive' } } }
+          : {}),
+        ...(studentCode
+          ? { student: { studentCode: { contains: studentCode, mode: 'insensitive' } } }
+          : {}),
+      },
+      include: {
+        room: { select: { roomNumber: true, building: true } },
+        student: { include: { user: { select: { fullName: true } } } },
+      },
+      orderBy: [{ room: { building: 'asc' } }, { startDate: 'desc' }],
+      take: 80,
+    })
+
+    const now = new Date()
+    return {
+      scope: 'organization',
+      kind: 'contracts',
+      filters: { status, building: building ?? null, studentCode: studentCode ?? null },
+      summary: { total: contracts.length },
+      contracts: contracts.map((c) => {
+        const daysUntilExpiry =
+          c.endDate != null
+            ? Math.ceil((c.endDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+            : null
+        return {
+          id: c.id,
+          studentCode: c.student.studentCode,
+          studentName: c.student.user.fullName,
+          roomNumber: c.room.roomNumber,
+          building: c.room.building,
+          startDate: c.startDate.toISOString(),
+          endDate: c.endDate?.toISOString() ?? null,
+          endDateNote:
+            c.endDate == null ? 'open-ended (chưa đặt ngày kết thúc trong hệ thống)' : null,
+          monthlyRent: money(c.monthlyRent),
+          depositAmount: money(c.depositAmount),
+          status: c.status,
+          daysUntilExpiry,
+        }
+      }),
+    }
+  }
+
+  /** Tổng hợp công nợ chưa thu (unpaid/overdue/partial), có thể lọc theo tháng. */
+  async loadRevenueSummary(input: { question: string }): Promise<Record<string, unknown>> {
+    const monthHint = parseMonthHint(input.question)
+    const monthFilter = monthHint ? monthRange(monthHint.year, monthHint.month) : null
+
+    const groups = await prisma.invoice.groupBy({
+      by: ['status'],
+      where: {
+        status: { in: UNPAID_LIKE },
+        ...(monthFilter
+          ? { invoiceMonth: { gte: monthFilter.start, lte: monthFilter.end } }
+          : {}),
+      },
+      _count: { _all: true },
+      _sum: { totalAmount: true },
+    })
+
+    const byStatus = groups.map((g) => ({
+      status: g.status,
+      count: g._count._all,
+      totalAmount: g._sum.totalAmount ? money(g._sum.totalAmount) : '0',
+    }))
+    const totalOutstanding = groups.reduce(
+      (s, g) => s + (g._sum.totalAmount ? g._sum.totalAmount.toNumber() : 0),
+      0
+    )
+    const countFor = (st: InvoiceStatus): number =>
+      groups.filter((g) => g.status === st).reduce((s, g) => s + g._count._all, 0)
+
+    return {
+      scope: 'organization',
+      kind: 'revenue_summary',
+      month: monthHint
+        ? `${monthHint.year}-${String(monthHint.month).padStart(2, '0')}`
+        : null,
+      asOf: new Date().toISOString(),
+      totalOutstandingAmount: money(totalOutstanding),
+      totalCount: groups.reduce((s, g) => s + g._count._all, 0),
+      unpaidCount: countFor(InvoiceStatus.unpaid),
+      overdueCount: countFor(InvoiceStatus.overdue),
+      partialCount: countFor(InvoiceStatus.partial),
+      byStatus,
+      note: 'Chỉ gom hóa đơn chưa thanh toán (unpaid/overdue/partial). Hóa đơn đã thanh toán (paid) không tính.',
+    }
+  }
+
+  /** Hợp đồng active sắp hết hạn trong cửa sổ N ngày (ứng viên gia hạn). */
+  async loadRenewalsExpiring(input: { question: string }): Promise<Record<string, unknown>> {
+    const days = parseDaysWindowHint(input.question, 30)
+    const now = new Date()
+    const horizon = new Date(now.getTime() + days * 24 * 60 * 60 * 1000)
+
+    const contracts = await prisma.contract.findMany({
+      where: {
+        status: ContractStatus.active,
+        endDate: { gte: now, lte: horizon },
+      },
+      include: {
+        room: { select: { roomNumber: true, building: true } },
+        student: { include: { user: { select: { fullName: true } } } },
+      },
+      orderBy: { endDate: 'asc' },
+      take: 60,
+    })
+
+    return {
+      scope: 'organization',
+      kind: 'renewals_expiring',
+      windowDays: days,
+      asOf: now.toISOString(),
+      horizon: horizon.toISOString(),
+      summary: { count: contracts.length },
+      contracts: contracts.map((c) => {
+        const end = c.endDate as Date
+        return {
+          studentCode: c.student.studentCode,
+          studentName: c.student.user.fullName,
+          roomNumber: c.room.roomNumber,
+          building: c.room.building,
+          endDate: end.toISOString(),
+          monthlyRent: money(c.monthlyRent),
+          daysUntilExpiry: Math.ceil((end.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)),
+        }
+      }),
+      note: 'Các hợp đồng active có ngày kết thúc trong cửa sổ — nhắc sinh viên gia hạn (mục Gia hạn) trước khi hết hạn.',
+    }
+  }
+
+  /** Danh sách sự cố theo trạng thái / ưu tiên / loại / phòng. */
+  async loadIncidents(input: { question: string }): Promise<Record<string, unknown>> {
+    const status = parseIncidentStatusHint(input.question)
+    const priority = parseIncidentPriorityHint(input.question)
+    const category = parseIncidentCategoryHint(input.question)
+    const building = parseBuildingHint(input.question)
+    const roomNumber = parseRoomNumberHint(input.question)
+
+    const roomFilter: { building?: object; roomNumber?: object } = {}
+    if (building) {
+      roomFilter.building = { contains: building, mode: 'insensitive' as const }
+    }
+    if (roomNumber) {
+      roomFilter.roomNumber = { contains: roomNumber, mode: 'insensitive' as const }
+    }
+
+    const incidents = await prisma.incident.findMany({
+      where: {
+        ...(status ? { status } : {}),
+        ...(priority ? { priority } : {}),
+        ...(category ? { category } : {}),
+        ...(Object.keys(roomFilter).length > 0 ? { room: roomFilter } : {}),
+      },
+      include: {
+        room: { select: { roomNumber: true, building: true } },
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 50,
+    })
+
+    return {
+      scope: 'organization',
+      kind: 'incidents',
+      filters: { status, priority, category, building, roomNumber },
+      summary: { total: incidents.length },
+      incidents: incidents.map((i) => ({
+        id: i.id,
+        title: i.title,
+        category: i.category,
+        priority: i.priority,
+        status: i.status,
+        roomNumber: i.room.roomNumber,
+        building: i.room.building,
+        createdAt: i.createdAt.toISOString(),
+        assigned: i.assignedTo != null,
+        resolvedAt: i.resolvedAt?.toISOString() ?? null,
+      })),
+    }
+  }
+
+  /** Danh sách vi phạm theo trạng thái / mức phạt / mã SV. */
+  async loadViolations(input: { question: string }): Promise<Record<string, unknown>> {
+    const status = parseViolationStatusHint(input.question)
+    const penaltyLevel = parsePenaltyLevelHint(input.question)
+    const studentCode = parseStudentCodeHint(input.question)
+
+    const violations = await prisma.violation.findMany({
+      where: {
+        ...(status ? { status } : {}),
+        ...(penaltyLevel ? { penaltyLevel } : {}),
+        ...(studentCode
+          ? { student: { studentCode: { contains: studentCode, mode: 'insensitive' } } }
+          : {}),
+      },
+      include: {
+        student: { include: { user: { select: { fullName: true } } } },
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 50,
+    })
+
+    return {
+      scope: 'organization',
+      kind: 'violations',
+      filters: { status, penaltyLevel, studentCode },
+      summary: { total: violations.length },
+      violations: violations.map((v) => ({
+        id: v.id,
+        studentCode: v.student.studentCode,
+        studentName: v.student.user.fullName,
+        type: v.type,
+        penaltyLevel: v.penaltyLevel,
+        penaltyAmount: v.penaltyAmount != null ? money(v.penaltyAmount) : null,
+        penaltyApplied: v.penaltyApplied,
+        status: v.status,
+        createdAt: v.createdAt.toISOString(),
+      })),
     }
   }
 }

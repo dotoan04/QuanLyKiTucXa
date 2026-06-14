@@ -20,13 +20,17 @@ describe('chatbot-tools.registry RBAC', () => {
     expect(canUseChatTool('staff', 'get_student_overview')).toBe(false)
   })
 
-  it('technician has schedule + search only', () => {
+  it('technician has schedule + search + incidents', () => {
     const allowed = getAllowedToolsForRole('technician')
-    expect(allowed).toEqual(['search_knowledge', 'get_appointment_schedule'])
+    expect(allowed).toEqual([
+      'search_knowledge',
+      'get_appointment_schedule',
+      'get_organization_incidents',
+    ])
   })
 
   it('admin has all tools', () => {
-    expect(getAllowedToolsForRole('admin').length).toBe(7)
+    expect(getAllowedToolsForRole('admin').length).toBe(12)
   })
 
   it('unknown role gets no tools', () => {
@@ -41,6 +45,9 @@ describe('chatbot-tools.registry RBAC', () => {
         'search_knowledge',
         'get_appointment_schedule',
         'get_organization_unpaid_invoices',
+        'get_organization_contracts',
+        'get_organization_revenue_summary',
+        'get_organization_renewals_expiring',
       ].sort()
     )
   })

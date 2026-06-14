@@ -1,8 +1,14 @@
 import { ChromaClient } from 'chromadb'
 import type { EmbeddingFunction } from 'chromadb'
-import { buildOpenRouterHeaders, getOpenRouterApiKey, getOpenRouterBaseUrl } from './openrouter-http.util'
+import {
+  buildOpenRouterHeaders,
+  getOpenRouterApiKey,
+  getOpenRouterBaseUrl,
+  resolveChatLightLlmModel,
+  resolveChatLlmModel,
+} from './openrouter-http.util'
 
-/** LLM via OpenRouter (default: DeepSeek V3.2). See OPENROUTER_* env vars. */
+/** LLM config chung. Chat LLM provider = DeepSeek (khi có DEEPSEEK_API_KEY) hoặc OpenRouter. */
 export const llmConfig = {
   maxTokens: parseInt(process.env.MAX_TOKENS || '4096', 10),
   temperature: parseFloat(process.env.TEMPERATURE || '0.7'),
@@ -10,20 +16,22 @@ export const llmConfig = {
 
 /**
  * Smaller/cheaper chat model for intent, general chat, and optional DB JSON summarization (CHAT_DATA_USE_LLM_SUMMARY=1).
- * Default Qwen3.5-9B on OpenRouter: https://openrouter.ai/qwen/qwen3.5-9b/api
- * Policy RAG still uses OPENROUTER_MODEL unless you override it there too.
+ * Provider-aware: DeepSeek (deepseek-v4-flash) hoặc OpenRouter (qwen3.5-9b).
  */
-export const lightLlmModel =
-  process.env.OPENROUTER_LIGHT_MODEL?.trim() || 'qwen/qwen3.5-9b'
+export const lightLlmModel = resolveChatLightLlmModel()
 
 /** Resolved model for intent classification (explicit intent model wins). */
 export function resolveIntentClassifyModel(): string {
-  return process.env.OPENROUTER_INTENT_MODEL?.trim() || lightLlmModel
+  return (
+    process.env.OPENROUTER_INTENT_MODEL?.trim() ||
+    process.env.DEEPSEEK_INTENT_MODEL?.trim() ||
+    lightLlmModel
+  )
 }
 
 /** Intent classification (small completion). */
 export const intentClassifyConfig = {
-  maxTokens: Math.max(4, parseInt(process.env.INTENT_CLASSIFY_MAX_TOKENS || '24', 10) || 24),
+  maxTokens: Math.max(16, parseInt(process.env.INTENT_CLASSIFY_MAX_TOKENS || '64', 10) || 64),
   temperature: parseFloat(process.env.INTENT_CLASSIFY_TEMPERATURE || '0'),
 }
 
@@ -45,10 +53,7 @@ export const responseTokenBudget = {
 const _mtr = parseInt(process.env.CHAT_MAX_TOOL_ROUNDS || '3', 10)
 export const chatAgentConfig = {
   maxToolRounds: Number.isFinite(_mtr) ? Math.min(5, Math.max(2, _mtr)) : 3,
-  model:
-    process.env.CHAT_AGENT_MODEL?.trim() ||
-    process.env.OPENROUTER_MODEL?.trim() ||
-    'deepseek/deepseek-v3.2',
+  model: process.env.CHAT_AGENT_MODEL?.trim() || resolveChatLlmModel(),
 }
 
 /**
