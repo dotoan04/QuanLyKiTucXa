@@ -99,11 +99,37 @@ class MeterReadingService {
     })
 
     const prevReadingMap = new Map(prevReadings.map(r => [r.roomId, r]))
+
+    // Fallback: nếu chưa có MeterReading tháng trước (phòng mới bàn giao), dùng chỉ số
+    // điện/nước ban đầu ghi lúc bàn giao (AssetHandover.electricityInitial/waterInitial) làm mốc cũ.
+    const handovers = await prisma.assetHandover.findMany({
+      where: { contract: { roomId: { in: occupiedRooms.map(r => r.id) } } },
+      include: { contract: { select: { roomId: true } } },
+      orderBy: { handoverAt: 'desc' },
+    })
+    const handoverMap = new Map<string, { elec: number; water: number }>()
+    for (const h of handovers) {
+      // orderBy handoverAt desc → bản ghi đầu tiên gặp là mới nhất
+      if (!handoverMap.has(h.contract.roomId)) {
+        handoverMap.set(h.contract.roomId, {
+          elec: h.electricityInitial?.toNumber() ?? 0,
+          water: h.waterInitial?.toNumber() ?? 0,
+        })
+      }
+    }
+
     const monthSubmittedToAccountant = await this.isMonthSubmittedToAccountant(month)
 
     const rooms = occupiedRooms.map(room => {
       const currentReading = room.meterReadings[0] // Since we filtered by month, there's at most 1
       const prevReading = prevReadingMap.get(room.id)
+      const handover = handoverMap.get(room.id)
+      const prevElectricity = prevReading
+        ? prevReading.electricityNew.toNumber()
+        : (handover?.elec ?? 0)
+      const prevWater = prevReading
+        ? prevReading.waterNew.toNumber()
+        : (handover?.water ?? 0)
 
       return {
         room: {
@@ -114,8 +140,8 @@ class MeterReadingService {
         },
         status: currentReading ? currentReading.status : 'not_started',
         readingId: currentReading?.id,
-        prevElectricity: prevReading ? prevReading.electricityNew : 0,
-        prevWater: prevReading ? prevReading.waterNew : 0,
+        prevElectricity,
+        prevWater,
         currentReading: currentReading ? {
           electricityNew: currentReading.electricityNew,
           waterNew: currentReading.waterNew,
@@ -175,8 +201,20 @@ class MeterReadingService {
       where: { roomId: data.roomId, month: prevMonthStr }
     })
 
-    const electricityOld = prevReading ? prevReading.electricityNew.toNumber() : 0
-    const waterOld = prevReading ? prevReading.waterNew.toNumber() : 0
+    let electricityOld = prevReading ? prevReading.electricityNew.toNumber() : 0
+    let waterOld = prevReading ? prevReading.waterNew.toNumber() : 0
+
+    // Fallback: chưa có reading tháng trước → lấy chỉ số bàn giao (AssetHandover) làm mốc cũ,
+    // tránh báo "cũ = 0" với phòng mới bàn giao đã ghi chỉ số đầu.
+    if (!prevReading) {
+      const handover = await prisma.assetHandover.findFirst({
+        where: { contract: { roomId: data.roomId } },
+        orderBy: { handoverAt: 'desc' },
+        select: { electricityInitial: true, waterInitial: true },
+      })
+      electricityOld = handover?.electricityInitial?.toNumber() ?? 0
+      waterOld = handover?.waterInitial?.toNumber() ?? 0
+    }
 
     if (data.electricityNew < electricityOld) {
       throw AppError.badRequest(`Chỉ số điện mới (${data.electricityNew}) không được nhỏ hơn chỉ số cũ (${electricityOld})`)

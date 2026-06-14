@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { Bell, CheckCheck, Loader2, ChevronRight, Info, AlertTriangle, CreditCard, FileText, X } from 'lucide-react'
 import api from '@/lib/api'
+import { getNotificationHref } from '@/lib/notification-target'
 
 interface Notification {
   id: string
@@ -11,6 +13,8 @@ interface Notification {
   message: string
   isRead: boolean
   createdAt: string
+  referenceType?: string | null
+  referenceId?: string | null
 }
 
 const typeIcons: Record<string, any> = {
@@ -41,6 +45,8 @@ export function NotificationDropdown({ href = '/notifications' }: NotificationDr
   const [markingAll, setMarkingAll] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
   const fetchTimer = useRef<NodeJS.Timeout | null>(null)
+  const router = useRouter()
+  const pathname = usePathname()
 
   const fetchNotifications = useCallback(async () => {
     try {
@@ -186,6 +192,11 @@ export function NotificationDropdown({ href = '/notifications' }: NotificationDr
                       key={notif.id}
                       onClick={() => {
                         if (!notif.isRead) handleMarkRead(notif.id)
+                        const href = getNotificationHref(notif, pathname)
+                        if (href) {
+                          setOpen(false)
+                          router.push(href)
+                        }
                       }}
                       className={`px-4 py-3 hover:bg-surface-50 transition-colors cursor-pointer flex gap-3 ${
                         !notif.isRead ? 'bg-primary-50/30' : ''

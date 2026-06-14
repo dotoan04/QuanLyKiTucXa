@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Bell, Search, CheckCheck, Trash2, Loader2, Info, AlertTriangle, CreditCard, FileText } from 'lucide-react'
 import api from '@/lib/api'
+import { getNotificationHref } from '@/lib/notification-target'
 
 const typeIcons: Record<string, any> = {
   system: Info,
@@ -29,6 +31,8 @@ interface Notification {
   message: string
   isRead: boolean
   createdAt: string
+  referenceType?: string | null
+  referenceId?: string | null
 }
 
 export default function NotificationsPage() {
@@ -37,6 +41,8 @@ export default function NotificationsPage() {
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState<'all' | 'unread' | 'read'>('all')
   const [markingAll, setMarkingAll] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     fetchNotifications()
@@ -209,7 +215,11 @@ export default function NotificationsPage() {
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${bgClass.split(' ')[0]}`}>
                     <Icon className={`w-5 h-5 ${bgClass.split(' ')[1]}`} />
                   </div>
-                  <div className="flex-1 min-w-0" onClick={() => !notif.isRead && handleMarkRead(notif.id)}>
+                  <div className="flex-1 min-w-0 cursor-pointer" onClick={() => {
+                    if (!notif.isRead) handleMarkRead(notif.id)
+                    const href = getNotificationHref(notif, pathname)
+                    if (href) router.push(href)
+                  }}>
                     <div className="flex items-start justify-between gap-4 mb-1">
                       <div className="flex items-center gap-2 min-w-0">
                         {!notif.isRead && (
