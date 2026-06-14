@@ -61,12 +61,14 @@ class MeterReadingService {
   }
 
   // 1. Get List of Rooms to read for a specific month
-  // UC27: Technician sees list of occupied rooms, with prev month's indices
+  // UC27: Technician sees list of rooms with active residents, with prev month's indices
   async getRoomsToRead(month: string) {
-    // Find all rooms that are currently occupied
+    // Phòng cần đọc = phòng ĐANG CÓ hợp đồng active (có người ở tiêu thụ điện/nước).
+    // KHÔNG dùng room.status='occupied' vì trường đó chỉ = "đầy capacity" — sẽ bỏ sót
+    // phòng có 1..(capacity-1) sinh viên đang ở (xem registrations.service.ts: status chỉ set 'occupied' khi đủ capacity).
     const occupiedRooms = await prisma.room.findMany({
       where: {
-        status: 'occupied',
+        contracts: { some: { status: 'active' } },
       },
       include: {
         roomType: true,
